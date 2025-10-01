@@ -1,6 +1,8 @@
 <?php
-// Include the ClassAutoLoad Method
-require_once 'ClassAutoLoad.php';
-$layout->header($conf);
-$form->signup();
-$layout->footer($conf);
+require 'ClassAutoLoad.php';
+
+$ObjLayout->header($conf);
+$ObjLayout->navbar($conf);
+$ObjLayout->banner($conf);
+$ObjLayout->content($conf);
+$ObjLayout->footer($conf);
